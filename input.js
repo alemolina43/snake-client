@@ -15,25 +15,25 @@ const setupInput = (conn) => {
 
 
 const handleUserInput = function(key) {
-  if (key === "\u0003") {
+  switch (key) {
+  case "\u0003":
     process.exit();
-  }
-  if (key === "w") {
+    break;
+  case "w":
     connection.write("Move: up");
-  }
-
-  if (key === "a") {
+    break;
+  case "a":
     connection.write("Move: left");
-  }
-
-  if (key === "s") {
+    break;
+  case "s":
     connection.write("Move: down");
-  }
-
-  if (key === "d") {
+    break;
+  case "d":
     connection.write("Move: right");
+    break;
+  case "h":
+    connection.write("Say: Hi!");
   }
-
 };
 
 
