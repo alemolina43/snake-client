@@ -18,7 +18,7 @@ const connect = function() {
   //send up our Name message to the server upon connection
   conn.on("connect", () => {
     conn.write("Name: A43");
-    // conn.write("Move: up");
+    //conn.write("Move: up");
     // setInterval(() => {
     //   conn.write("Move: up");
     //   // setTimeout(() => {
