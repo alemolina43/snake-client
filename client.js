@@ -18,6 +18,13 @@ const connect = function() {
   //send up our Name message to the server upon connection
   conn.on("connect", () => {
     conn.write("Name: A43");
+    // conn.write("Move: up");
+    // setInterval(() => {
+    //   conn.write("Move: up");
+    //   // setTimeout(() => {
+    //   //   conn.write("Move: down");
+    //   // }, 50);
+    // }, 50);
   });
 
   //function to handle incoming data and console.log it for the player
